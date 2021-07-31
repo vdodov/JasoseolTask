@@ -1,0 +1,6 @@
+framework module Pods_JasoseolTask {
+  umbrella header "Pods-JasoseolTask-umbrella.h"
+
+  export *
+  module * { export * }
+}

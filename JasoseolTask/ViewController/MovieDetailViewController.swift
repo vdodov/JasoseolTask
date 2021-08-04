@@ -14,7 +14,6 @@ class MovieDetailViewController: BaseViewController {
     //MARK: -Properties
     let movieInfoView: MovieInfoView = {
         let view = MovieInfoView()
-        view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
@@ -23,7 +22,6 @@ class MovieDetailViewController: BaseViewController {
         activityIndicator.color = .black
         activityIndicator.startAnimating()
         activityIndicator.hidesWhenStopped = true
-        activityIndicator.translatesAutoresizingMaskIntoConstraints = false
         return activityIndicator
     }()
     

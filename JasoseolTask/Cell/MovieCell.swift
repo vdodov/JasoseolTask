@@ -25,7 +25,6 @@ class MovieCell: UITableViewCell {
        let iv = UIImageView()
         iv.backgroundColor = .systemGroupedBackground
         iv.contentMode = .scaleToFill
-        iv.translatesAutoresizingMaskIntoConstraints = false
         return iv
     }()
     
@@ -56,13 +55,11 @@ class MovieCell: UITableViewCell {
     
     private var infoStackView: UIStackView = {
         let view = UIStackView()
-        view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
     let likeButton: UIButton = {
        let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
 

@@ -30,7 +30,6 @@ class LikeMovieCell: UITableViewCell {
     private let thumbnailImageView: UIImageView = {
        let iv = UIImageView()
         iv.backgroundColor = .black
-        iv.translatesAutoresizingMaskIntoConstraints = false
         return iv
     }()
     
@@ -61,14 +60,12 @@ class LikeMovieCell: UITableViewCell {
     
     private var infoStackView: UIStackView = {
         let view = UIStackView()
-        view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
     private let likeButton: UIButton = {
        let button = UIButton()
         button.setImage(UIImage(named: "empty_star"), for: .normal)
-        button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
 

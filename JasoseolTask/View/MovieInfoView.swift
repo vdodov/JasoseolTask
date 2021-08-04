@@ -21,7 +21,6 @@ class MovieInfoView: UIView {
     private let thumbnailImageView: UIImageView = {
        let iv = UIImageView()
         iv.backgroundColor = .systemGroupedBackground
-        iv.translatesAutoresizingMaskIntoConstraints = false
         return iv
     }()
     
@@ -45,14 +44,12 @@ class MovieInfoView: UIView {
     
     private var infoStackView: UIStackView = {
         let view = UIStackView()
-        view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
     private let likeButton: UIButton = {
        let button = UIButton()
         button.setImage(UIImage(named: "empty_star"), for: .normal)
-        button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
 

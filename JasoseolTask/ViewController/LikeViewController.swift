@@ -15,7 +15,6 @@ class LikeViewController: BaseViewController {
     
     let listTableView: UITableView = {
        let tableView = UITableView()
-        tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
 

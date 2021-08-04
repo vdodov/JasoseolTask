@@ -22,7 +22,6 @@ class MovieListViewController: BaseViewController {
     
     let listTableView: UITableView = {
         let tableView = UITableView()
-        tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
 
@@ -72,7 +71,6 @@ class MovieListViewController: BaseViewController {
         let guide = view.safeAreaLayoutGuide
         
         view.addSubview(listTableView)
-        listTableView.translatesAutoresizingMaskIntoConstraints = false
         listTableView.snp.makeConstraints { make in
             make.top.leading.trailing.bottom.equalTo(guide)
         }

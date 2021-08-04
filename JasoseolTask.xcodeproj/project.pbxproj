@@ -103,6 +103,7 @@
 				E635933D26B00A6100E5E68C /* AppDelegate.swift */,
 				E635933F26B00A6100E5E68C /* SceneDelegate.swift */,
 				E635936926B2EC5F00E5E68C /* Extensions */,
+				E638FFBA26BA6E3F00103AF4 /* Service */,
 				E635935926B02EB500E5E68C /* Model */,
 				E635935826B024C600E5E68C /* Cell */,
 				E635936026B1346B00E5E68C /* View */,
@@ -138,7 +139,6 @@
 			isa = PBXGroup;
 			children = (
 				E635935A26B02ECD00E5E68C /* Movie.swift */,
-				E635935C26B0FBE400E5E68C /* SearchAPI.swift */,
 				E635935E26B103EE00E5E68C /* MovieModelManager.swift */,
 			);
 			path = Model;
@@ -159,6 +159,14 @@
 				E635936C26B2F45100E5E68C /* Alert.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E638FFBA26BA6E3F00103AF4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E635935C26B0FBE400E5E68C /* SearchAPI.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

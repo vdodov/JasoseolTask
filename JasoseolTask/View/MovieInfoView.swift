@@ -51,7 +51,7 @@ class MovieInfoView: UIView {
     
     private let likeButton: UIButton = {
        let button = UIButton()
-        button.setImage(#imageLiteral(resourceName: "empty_star"), for: .normal)
+        button.setImage(UIImage(named: "empty_star"), for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -70,7 +70,7 @@ class MovieInfoView: UIView {
         guard let isLiked = movieContent.isLiked else { return }
         
         if isLiked {
-            likeButton.setImage(#imageLiteral(resourceName: "empty_star"), for: .normal)
+            likeButton.setImage(UIImage(named: "empty_star"), for: .normal)
             
             guard let currentLink = shared.movieDataArr[shared.key]?.items?[index].link else { return }
             
@@ -85,7 +85,7 @@ class MovieInfoView: UIView {
             shared.likeMoiveDataArr.remove(at: removeIndex)
         } else {
             shared.movieDataArr[shared.key]?.items?[index].isLiked = true
-            likeButton.setImage(#imageLiteral(resourceName: "star"), for: .normal)
+            likeButton.setImage(UIImage(named: "star"), for: .normal)
         
             shared.likeMoiveDataArr.append(Movie(title: movieContent.title,
                                                  link: movieContent.link,
@@ -147,21 +147,21 @@ class MovieInfoView: UIView {
     
     private func setLikeButton() {
         guard let isLiked = content?.isLiked else { return }
-        if isLiked { //초기값 false
-            likeButton.setImage(#imageLiteral(resourceName: "star"), for: .normal)
+        if isLiked { 
+            likeButton.setImage(UIImage(named: "star"), for: .normal)
         } else {
-            likeButton.setImage(#imageLiteral(resourceName: "empty_star"), for: .normal)
+            likeButton.setImage(UIImage(named: "empty_star"), for: .normal)
         }
     }
     
     private func downloadIamge(_ str: String?) {
         guard let str = str else {
-            thumbnailImageView.image = #imageLiteral(resourceName: "default-image")
+            thumbnailImageView.image = UIImage(named: "default_image")
             return
         }
         
         if str == "" {
-            thumbnailImageView.image = #imageLiteral(resourceName: "default-image")
+            thumbnailImageView.image = UIImage(named: "default_image")
         }
         
         guard let url = URL(string: str) else { return }
